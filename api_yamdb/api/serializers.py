@@ -6,7 +6,6 @@ from django.db.models import Avg
 from rest_framework import exceptions, filters, serializers
 from rest_framework.validators import UniqueTogetherValidator, UniqueValidator
 from rest_framework_simplejwt.tokens import RefreshToken
-
 from reviews.models import Comment, Review
 from titles.models import Categories, Genres, Title
 from users.models import User

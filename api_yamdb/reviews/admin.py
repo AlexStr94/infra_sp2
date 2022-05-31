@@ -1,7 +1,7 @@
 from django.contrib import admin
+from reviews.models import Comment, Review
 
 from api_yamdb.settings import VALUE_DISPLAY
-from reviews.models import Comment, Review
 
 
 @admin.register(Review)

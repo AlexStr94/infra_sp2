@@ -1,7 +1,7 @@
 from django.contrib import admin
+from titles.models import Categories, Genres, Title
 
 from api_yamdb.settings import VALUE_DISPLAY
-from titles.models import Categories, Genres, Title
 
 
 @admin.register(Title)
