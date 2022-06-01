@@ -16,13 +16,7 @@ VALUE_DISPLAY = '-Empty-'
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '[::1]',
-    'testserver',
-    'web'
-]
+ALLOWED_HOSTS = os.getenv('SERVERNAMES').split(' ')
 
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
